@@ -30,7 +30,7 @@ export const LoginForm = () => {
         />
       </FormItemWrapper>
       <FormItemWrapper>
-        <Label htmlFor={`password`}>Username</Label>
+        <Label htmlFor={`password`}>Password</Label>
         <Input
           type={'password'}
           placeholder={'password'}
