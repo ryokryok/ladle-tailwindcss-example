@@ -3,10 +3,10 @@ import { Button } from './Button'
 import { FormItemWrapper, FormWrapper, Input, Label } from './Form'
 
 export const Text = () => (
-  <FormWrapper>
+  <FormItemWrapper>
     <Label htmlFor={`username`}>Username</Label>
     <Input type={'text'} placeholder={'username'} id={`username`} />
-  </FormWrapper>
+  </FormItemWrapper>
 )
 
 export const LoginForm = () => {
