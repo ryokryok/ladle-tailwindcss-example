@@ -13,7 +13,7 @@ export const LoginForm = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const isDisabled = !email || !password
-  const submitHadnler = (e: MouseEvent<HTMLButtonElement>) => {
+  const submitHandler = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
     alert("This is demo, don't send anything")
   }
@@ -44,7 +44,7 @@ export const LoginForm = () => {
           isDisabled ? `bg-gray-700` : `bg-green-700`
         }  rounded font-mono text-white p-2 w-full`}
         disabled={isDisabled}
-        onClick={submitHadnler}
+        onClick={submitHandler}
       >
         Login
       </Button>
