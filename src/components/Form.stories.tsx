@@ -40,14 +40,11 @@ export const LoginForm = () => {
         />
       </FormItemWrapper>
       <Button
-        className={`${
-          isDisabled ? `bg-gray-700` : `bg-green-700`
-        }  rounded font-mono text-white p-2 w-full`}
+        className={`${isDisabled ? 'bg-gray-700' : 'bg-green-700'}`}
         disabled={isDisabled}
         onClick={submitHandler}
-      >
-        Login
-      </Button>
+        label={'Login'}
+      />
     </FormWrapper>
   )
 }

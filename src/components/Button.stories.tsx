@@ -10,22 +10,9 @@ type ButtonParameter = {
 export const Submit: Story<ButtonParameter> = ({
   label,
   size = 'medium',
-  disabled = false,
+  disabled,
 }: ButtonParameter) => (
-  <Button
-    className={`${disabled ? `bg-gray-600` : `bg-blue-600 hover:bg-blue-700`} ${
-      size === 'small'
-        ? `px-2 py-1 text-sm`
-        : size === 'medium'
-        ? `px-3 py-2 text-base`
-        : `px-6 py-3 text-xl`
-    }
-      font-sans text-white rounded-full w-full`}
-    type={'submit'}
-    disabled={disabled}
-  >
-    {label}
-  </Button>
+  <Button label={label} size={size} disabled={disabled} rounded="full" />
 )
 
 Submit.args = {

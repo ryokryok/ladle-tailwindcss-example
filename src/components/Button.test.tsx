@@ -10,7 +10,7 @@ beforeEach(() => {
 it('Button.tsx call function from props', async () => {
   const user = userEvent.setup()
   const testClick = vi.fn()
-  render(<Button onClick={testClick}>Like</Button>)
+  render(<Button onClick={testClick} label="Like" />)
   await user.click(await screen.findByText('Like'))
   expect(testClick).toBeCalled()
 })
