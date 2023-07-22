@@ -11,7 +11,8 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "story": "ladle serve",
-    "build-story": "ladle build"
+    "build-story": "ladle build",
+    "preview-story": "ladle preview"
   },
   "dependencies": {
     "react": "^18.2.0",
